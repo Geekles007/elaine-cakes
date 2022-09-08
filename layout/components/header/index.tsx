@@ -2,14 +2,14 @@ import React from "react";
 import Link from "next/link";
 import {TLink} from "../../../models/ILink";
 import useSWR from "swr";
-import {apiHost, theme} from "../../../constants";
+import {deploy, theme} from "../../../constants";
 import {HeaderWrapper} from "./default";
 import CustomLink from "../../../components/custom-link";
 import cart from "./../../../public/icons/cart.svg";
 
 const Header = () => {
     const fetcher = (...args: any) => fetch(args).then(res => res.json())
-    const { data: links, error } = useSWR(`${apiHost}/links`, fetcher)
+    const { data: links, error } = useSWR(`${deploy}/links`, fetcher)
 
     if (error) return <div>Failed to load</div>
     if (!links) return <div>Loading...</div>
