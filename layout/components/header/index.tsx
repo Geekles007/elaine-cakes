@@ -17,7 +17,7 @@ const Header = () => {
     return <HeaderWrapper>
         <div className="_content">
             <div className="_logo">
-                <strong>Elaine's <br/> Star</strong>
+                <strong>{'Elaine\'s'} <br/> Cakes</strong>
             </div>
             <ul>
                 {
