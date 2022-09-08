@@ -16,7 +16,7 @@ const Home: NextPage = () => {
             <div className={styles._body}>
                 <div className={styles._content}>
                     <div className={styles._left}>
-                        <h1>Elaine's <br/> Cakes</h1>
+                        <h1>{'Elaine\'s'} <br/> Cakes</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque delectus dignissimos quia.
                             Doloribus eaque earum exercitationem.</p>
                         <button className={styles._order}>Order now</button>
